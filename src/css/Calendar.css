@@ -1,0 +1,100 @@
+.calendar {
+  margin-top: auto;
+  margin-bottom: 2%;
+  width: 90%;
+  height: 80%;
+  background-color: #f0f8ff;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #ffb6c1;
+  border: 1px solid black;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.header-start {
+  flex: 1;
+  margin-left: 2%;
+}
+
+.header-end {
+  display: flex;
+  align-items: center;
+  margin: 2%;
+}
+
+.Icons {
+  width: 35px;
+}
+
+.days {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  padding: 10px 0;
+}
+.days .col {
+  font-weight: bold;
+}
+.col {
+  flex: 1;
+  text-align: center;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  flex-grow: 1;
+}
+
+.row {
+  display: flex;
+  flex-grow: 1;
+}
+
+.cell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.date-container {
+  position: relative;
+  height: 100%;
+}
+.date-container .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.selected {
+  background-color: #ffb6c1;
+}
+
+.not-valid {
+  color: #ccc;
+}
+
+.disabled {
+  cursor: not-allowed;
+  color: #ccc;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: bold;
+}
